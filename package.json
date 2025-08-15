@@ -1,0 +1,1 @@
+{"name":"github-actions-demo","version":"1.0.0","scripts":{"test":"echo \"Tests passed!\" && exit 0"}}
