@@ -1,0 +1,15 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  hybird:
+    runs-on: ubuntu-latest
+    steps:
+      - name: command on ubuntu runner VM
+        run: echo "run on ubuntu"
+
+      - name: docker action
+        uses: docker://ubuntu:latest
+        with:
+          entrypoint: /bin/bash
+          args: -c "echo 'run on docker'"
