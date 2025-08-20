@@ -1,0 +1,12 @@
+on: 
+  workflow_dispatch:
+jobs:
+  example:
+    runs-on: ubunto-latest
+    steps:
+    -  name: set API key
+       run: echo "API_KEY=123" >> $GITHUB_ENV
+
+    -  name: get API key
+       run: echo "my key is $API_KEY"
+       
